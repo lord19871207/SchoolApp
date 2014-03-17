@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="elements.css">
+    <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <style>
+        body {
+                font-family: Gafata, Sans Serif;
+                font-size: 25px;
+            }
+        #numbers {
+            font-size: inherit;
+            border: solid;
+            border-color: grey;
+        }
+        #textfield {
+            font-size: inherit;
+        }
+    </style>
+    <h1>Calculator</h1>
+    <form name="calculator">
+        Solution
+        <input id="textfield" type="textfield" name="ans" value="">
+        <br>
+        <h2><input id="numbers"  type="button" value="1" onClick="document.calculator.ans.value+='1'">
+        <input id="numbers" type="button" value="2" onClick="document.calculator.ans.value+='2'">
+        <input id="numbers" type="button" value="3" onClick="document.calculator.ans.value+='3'">
+        <input id="numbers" type="button" value="+" onClick="document.calculator.ans.value+='+'">
+        <br>
+        <input id="numbers" type="button" value="4" onClick="document.calculator.ans.value+='4'">
+        <input id="numbers" type="button" value="5" onClick="document.calculator.ans.value+='5'">
+        <input id="numbers" type="button" value="6" onClick="document.calculator.ans.value+='6'">
+        <input id="numbers" type="button" value="-" onClick="document.calculator.ans.value+='-'">
+        <br>
+        <input id="numbers" type="button" value="7" onClick="document.calculator.ans.value+='7'">
+        <input id="numbers" type="button" value="8" onClick="document.calculator.ans.value+='8'">
+        <input id="numbers" type="button" value="9" onClick="document.calculator.ans.value+='9'">
+        <input id="numbers" type="button" value="X" onClick="document.calculator.ans.value+='*'">
+        <br>
+        <input id="numbers" type="button" value="0" onClick="document.calculator.ans.value+='0'">
+        <input id="numbers" type="reset" value="Reset">
+        <input id="numbers" type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"></h2>
+    </form>
+</body>
+
+</html>
